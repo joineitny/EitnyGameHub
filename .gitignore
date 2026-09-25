@@ -1,0 +1,22 @@
+.DS_Store
+.build/
+*.app/
+*.zip
+* Data/
+Bottle/
+Runtime/
+Logs/
+Downloads/
+work/
+*.log
+*.pkg
+*.dmg
+Installer-*/
+Profiles/
+Stable/
+__pycache__/
+*.pyc
+.env
+.env.*
+CONTINUE.md
+ICON-DESIGN.md
