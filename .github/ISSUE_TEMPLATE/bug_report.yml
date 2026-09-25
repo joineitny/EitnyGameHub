@@ -1,0 +1,50 @@
+name: "App bug / Ошибка приложения"
+description: "Installation, interface, library or launch issue. Ошибка установки, интерфейса, библиотеки или запуска."
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Russian is welcome. Можно писать по-русски или по-английски.
+        Check existing issues and include the exact error. Посмотрите существующие отчёты и укажите точный текст ошибки.
+        Do not upload Steam account files. Не прикладывайте файлы аккаунта Steam.
+  - type: input
+    id: version
+    attributes:
+      label: "EitnyGameHub version / Версия"
+      placeholder: "0.4.1, PKG installer / установщик PKG"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: "Mac, chip, memory and macOS / Mac, чип, память и macOS"
+      description: "Include the full macOS version. Укажите полный номер macOS."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / Как повторить"
+      description: "What did you open or click? Include the game and profile if relevant. Что открыли или нажали? При необходимости укажите игру и профиль."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior / Ожидаемое поведение"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior and exact error / Результат и точный текст ошибки"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Screenshots or relevant log excerpt / Скриншоты или фрагмент журнала"
+      description: "Optional. Remove account details, tokens and personal paths. Необязательно. Удалите данные аккаунтов, токены и личные пути."
+    validations:
+      required: false

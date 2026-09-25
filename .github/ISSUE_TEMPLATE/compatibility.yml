@@ -1,0 +1,84 @@
+name: "Game test / Проверка игры"
+description: "Share a working or failing game test. Расскажите об успешном или неудачном запуске игры."
+title: "[Game test] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Working games need reports too! / Отчёты нужны и о работающих играх!**
+        English or Russian is welcome. Можно писать по-русски или по-английски.
+        Check existing reports before creating a duplicate. Use windowed mode for PoE.
+        Посмотрите существующие отчёты; для PoE используйте оконный режим.
+  - type: input
+    id: game
+    attributes:
+      label: "Game / Игра"
+      description: "Exact title; Steam App ID and game build if known. Название, App ID и сборка игры, если известны."
+      placeholder: "Path of Exile (first game), Steam 238960"
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: "EitnyGameHub version / Версия"
+      description: "Release version, or commit for a source build. Версия релиза или коммит своей сборки."
+      placeholder: "0.4.1"
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: "Mac, chip, memory / Mac, чип, память"
+      placeholder: "MacBook Air M1, 16 GB"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: "macOS version / Версия macOS"
+      description: "Include the full version number. Укажите полный номер версии."
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: "Launch profile / Профиль запуска"
+      options:
+        - "GWENT / main Steam / основной Steam (DXMT)"
+        - "Path of Exile / separate Steam / отдельный Steam (D3DMetal)"
+        - "Other or modified / Другой или изменённый — explain below / опишите ниже"
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: "Result / Результат"
+      options:
+        - "Playable in the tested scene / Играется в проверенной сцене"
+        - "Playable with issues / Играется с проблемами"
+        - "Menu only or loading only / Только меню или загрузка"
+        - "Does not launch or crashes / Не запускается или вылетает"
+    validations:
+      required: true
+  - type: textarea
+    id: session
+    attributes:
+      label: "What did you test? / Что проверяли?"
+      description: "Scene, duration, input, audio, sign-in and relaunch. Сцена, длительность, управление, звук, вход и повторный запуск."
+      placeholder: "Describe what worked and any problems. Опишите, что работает и какие есть проблемы."
+    validations:
+      required: true
+  - type: textarea
+    id: graphics
+    attributes:
+      label: "Graphics and FPS / Графика и FPS"
+      description: "Resolution, window mode, renderer, FSR quality, preset, FPS and scene if measured. Разрешение, режим окна, рендерер, FSR, пресет, FPS и сцена, если измеряли."
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Errors, screenshots or logs / Ошибки, скриншоты или журнал"
+      description: "Optional. Remove account details, tokens and personal paths. Необязательно. Удалите данные аккаунтов, токены и личные пути."
+    validations:
+      required: false
