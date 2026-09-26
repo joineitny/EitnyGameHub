@@ -1,0 +1,49 @@
+EitnyGameHub 0.4.1 — Install on Mac
+
+Download EitnyGameHub-0.4.1-Installer.pkg from:
+https://github.com/joineitny/EitnyGameHub/releases/latest
+
+Requirements: Apple Silicon (M1 or later), macOS 14 or later.
+Path of Exile requires macOS 15 or later. Rosetta 2 and internet access are required.
+The app and installer currently use Russian interface text; labels are translated below.
+
+1. Open the installer, choose Continue, then Install. macOS may request an
+   administrator password to install into Applications.
+2. Open EitnyGameHub from Applications.
+3. Click “Подготовить Steam” (Set up Steam) and wait for the components to download.
+   Then click “Открыть Steam” (Open Steam) and sign in to YOUR OWN account.
+4. GWENT: install it in the prepared Windows Steam client, refresh the library
+   in EitnyGameHub and click the game card. Sign in to your own GOG account when asked.
+5. Path of Exile 1: open Path of Exile → “Подготовить PoE” (Set up PoE).
+   Sign in to its separate Steam client and install the first Path of Exile.
+   Use “Играть в PoE” (Play PoE) to launch it.
+
+The installer contains only the launcher. Compatibility components, Steam and games
+are downloaded separately. Rosetta 2 is installed separately through macOS.
+
+The installer is NOT Developer ID signed or notarized by Apple.
+If macOS blocks opening, after attempting to open the downloaded file check
+System Settings → Privacy & Security → Open Anyway for EitnyGameHub.
+Official instructions: https://support.apple.com/102445
+Do not disable macOS security globally. For a different error, report its exact text
+and your Mac/macOS version; the installer cannot resolve every launch problem.
+
+GWENT and PoE have been tested by the project creator on M3 Pro / macOS 27.
+Other Macs and games still need testing. Use a normal window for PoE: Fullscreen
+can cause a black screen. To recover, switch with Command-Tab to EitnyGameHub →
+Path of Exile → “Восстановить оконный режим…” (Restore windowed mode).
+This closes the current PoE session.
+
+On a new Mac, settings, games and account data are stored separately in:
+~/Library/Application Support/EitnyGameHub
+Do not share this directory. Updating the application does not delete it.
+To uninstall the app, close it and move EitnyGameHub from Applications to Trash.
+Game data remains on disk.
+
+Full guide: https://github.com/joineitny/EitnyGameHub#readme
+Share working or failing tests:
+https://github.com/joineitny/EitnyGameHub/issues/new?template=compatibility.yml
+Include your Mac/chip/memory, macOS, game, settings and tested scene.
+
+EitnyGameHub is an independent project. Games, trademarks and third-party
+components remain subject to their respective owners' terms and licenses.
